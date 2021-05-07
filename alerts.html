@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body>
+   
+
+    <div class="container">
+        
+        <div class="alert alert-success" role="alert">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus vel, error suscipit ipsum, assumenda, inventore nam obcaecati accusantium minus praesentium sed ullam aliquid dolore magnam voluptates maxime nostrum provident molestiae.
+
+        </div>
+ <div class="row">
+     <div class="col">
+         <div class="alert alert-secondary">
+             Hello World!
+         </div>
+     </div>
+     <div class="col">
+        <div class="alert alert-primary">
+            Hello World!
+        </div>
+     </div>
+ </div>
+          <div class="row">
+              <div class="col-sm">
+                  <div class="alert alert-danger">
+                      Error!!!!
+                  </div>
+              </div>
+              <div class="col-sm">
+                <div class="alert alert-warning">
+                    Error!!!!
+                </div>
+            </div>
+              </div>
+
+              <div class="alert alert-info">
+                   Information!!!
+                   <a href="http://youtube.com/hcodebrasil">Youtube</a>
+              </div>
+
+              <div class="alert alert-dark">
+                  <h4>Título</h4>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum aspernatur nobis similique adipisci iusto laboriosam modi possimus doloremque minima quo officiis consequatur, veritatis maxime nam aliquid unde facere dolore quam.</p>
+
+                  <hr>
+
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore et ducimus debitis distinctio expedita culpa accusamus iure tempora suscipit excepturi, voluptate tenetur saepe aspernatur, praesentium aut, atque fuga repudiandae dignissimos!</p>
+              </div>
+
+              <div class="alert alert-sucess alert-dismissible fade show" role="alert">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, est totam dignissimos quod, cupiditate non animi blanditiis nesciunt, recusandae tenetur similique sit. Maxime aliquam praesentium nobis assumenda quis odio nulla?
+                  <button class="close" data-dismiss="alert" aria-label="close">
+                      <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+
+            <button id="btn-close-all" type="button">Fechar todos os Alertas</button>
+
+          </div>
+           
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(() => {
+
+
+         $('#btn-close-all').on('click', e => {
+
+                  $('.alert').alert('close');
+
+
+
+
+         });
+
+        });
+    </script>
+
+    
+</body>
+</html>
